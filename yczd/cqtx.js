@@ -5,10 +5,10 @@
 
 [rewrite_local]
 
-https://api.mag-store.com/api/client/app/bootstrap url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/NexCam.js
+https://appserver.nokeeu.com/api/user/a/v1/skin/getCurrentSkinDetail url script-response-body https://raw.githubusercontent.com/yejiuxing/QuantumultX/refs/heads/main/yczd/cqtx.js
 [mitm] 
 
-hostname = api.mag-store.com
+hostname = appserver.nokeeu.com
 
 *******************************/
 
@@ -17,16 +17,10 @@ let obj = JSON.parse(body);
 
 if (obj.data) {
 
-    obj.data.member = true;
-    obj.data.memberExpiresAt = "2099-12-31T23:59:59";
-    obj.data.vipExpiresAt = "2099-12-31T23:59:59";
-    obj.data.vipExpiresAtIso = "2099-12-31T15:59:59Z";
-    obj.data.vipExpiresAtMs = 4102444799000;       
-    obj.data.vipRemainingSeconds = 2592000000;      
-    obj.data.userType = "vip";
-    obj.data.trialClaimLimit = 999;
-    obj.data.trialClaimUsed = 0;
-    obj.data.trialClaimRemaining = 999;
+    obj.data.supportTryFlag = 0;
+    obj.data.tryUseDuration = 0;
+    obj.data.tryUseUnit = 1;
+    obj.data.keepStatus = "3";
 }
 
 $done({ body: JSON.stringify(obj) });
