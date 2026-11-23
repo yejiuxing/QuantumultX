@@ -7,7 +7,7 @@
 
 [rewrite_local]
 
-^https:\/\/appserver\.nokeeu\.com\/api\/user\/a\/v1\/skin\/suggestSkinList url script-response-body https://raw.githubusercontent.com/yejiuxing/QuantumultX/refs/heads/main/yczd/cqtx.js
+^https:\/\/appserver\.nokeeu\.com\/api\/user\/a\/v1\/skin\/suggestSkinList url script-response-body https://raw.githubusercontent.com/yejiuxing/QuantumultX/refs/heads/main/yczd/cqpf.js
 
 [mitm] 
 
